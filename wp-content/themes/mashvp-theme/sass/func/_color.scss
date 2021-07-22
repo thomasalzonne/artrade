@@ -1,0 +1,6 @@
+@function mix-alpha($background, $color) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+
+  @return mix($opaque, $background, $percent);
+}

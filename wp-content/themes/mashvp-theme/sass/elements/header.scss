@@ -1,0 +1,88 @@
+.navbar {
+    grid-column: span 12;
+    margin-top: 50px;
+}
+.logo {
+    grid-column: 1/span 3;
+}
+ul#menu-mainnav {
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    grid-column: 6/span 7;
+    display: flex;
+}
+.menu-mainnav-container {
+    margin: auto;
+    width: 100%;
+}
+.menu a {
+    text-decoration: none;
+    line-height: 23px;
+    color: #8f4feb;
+    font-family: objektiv-mk1;
+    font-weight: bold;
+}
+.headertitle.title {
+    grid-column: 1/span 9;
+    font-weight: bold;
+}
+.ico {
+    grid-column: span 12;
+    margin-bottom: 100px;
+}
+.countdown {
+    grid-column: 1/span 7;
+}
+.raised {
+    grid-column: 8/span 5;
+}
+.raisedtxt,.endin {
+    line-height: 23px;
+}
+.chrono, .money{
+    font-size: 60px;
+    line-height: 70px;
+}
+.chrono.green.tk-bely-display {
+    display: flex;
+}
+.lil {
+    height: fit-content;
+    font-size: 20px;
+    margin-top: auto;
+    line-height: 39px;
+    font-family: 'objektiv-mk1';
+    margin-right: 10px;
+    margin-left: 2px;
+}
+.headervideo {
+    grid-column: span 12;
+    height: 725px;
+    background-color: #8f4feb;
+    margin-bottom: 160px;
+}
+@media screen and (max-width: 800px){
+    .headertitle.title{
+        grid-column: 1/span 12;
+    }
+    .ico.grid12 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 450px){
+    .header.grid12.wi90.ma {
+        display: flex;
+        flex-direction: column;
+    }
+    .headertitle.tk-objektiv-mk1.title.purple {
+        font-size: 40px;
+    }
+    .chrono, .money {
+        font-size: 40px;
+        line-height: 56px;
+    }
+}

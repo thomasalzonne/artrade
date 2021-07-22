@@ -1,0 +1,34 @@
+.green{
+    color: #44DF59;
+}
+.purple{
+    color: #8F4FEB;
+}
+.headertitle{
+    font-size: 72px;
+}
+.sectiontitle{
+    font-size: 60px;
+}
+.sectionsubtitle{
+    font-size: 36px;
+}
+.grid12{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+}
+.pt100 {
+    padding-top: 100px;
+}
+.ma {
+    margin: auto;
+}
+.wi90 {
+    width: 90%;
+    max-width: 960px;
+}
+.nogrg {
+    grid-row-gap: 0em;
+}

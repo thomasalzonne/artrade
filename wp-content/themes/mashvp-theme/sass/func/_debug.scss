@@ -1,0 +1,11 @@
+@mixin debug {
+  @if $ENV == 'development' {
+    @content;
+  }
+}
+
+@mixin prod-only {
+  @if $ENV == 'production' {
+    @content;
+  }
+}

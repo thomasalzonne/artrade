@@ -1,0 +1,35 @@
+{
+  "name": "giesper",
+  "version": "1.0.0",
+  "description": "Giesper theme",
+  "main": "js/index.js",
+  "author": "Mashvp",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "sass": "node-sass sass/index.scss style.css --include-path ./sass/environments/production --include-path ./node_modules --output-style compressed",
+    "watch-sass": "node-sass-chokidar -w sass/index.scss style.css --include-path ./sass/environments/development --include-path ./node_modules --output-style nested --source-map true",
+    "js": "rm -f js/chunks/* && webpack --mode production",
+    "watch-js": "rm -f js/chunks/* && webpack --watch --mode development",
+    "watch": "concurrently 'npm:watch-sass' 'npm:watch-js'",
+    "build": "concurrently 'npm:sass' 'npm:js'"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "concurrently": "^5.3.0",
+    "eslint": "^7.17.0",
+    "node-sass": "^5.0.0",
+    "node-sass-chokidar": "^1.5.0",
+    "terser-webpack-plugin": "^5.0.3",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.5"
+  }
+}

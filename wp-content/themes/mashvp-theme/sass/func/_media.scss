@@ -1,0 +1,35 @@
+@mixin media-below($width) {
+  @media all and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin media-above($width) {
+  @media all and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin media($width, $above: false) {
+  @if $above {
+    @include media-above($width) {
+      @content;
+    }
+  } @else {
+    @include media-below($width) {
+      @content;
+    }
+  }
+}
+
+@mixin mobile {
+  @include media($mobile-layout-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @include media($mobile-layout-width, $above: true) {
+    @content;
+  }
+}

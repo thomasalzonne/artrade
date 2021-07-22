@@ -1,0 +1,43 @@
+html,
+body {
+  width: 100vw;
+  max-width: 100vw ;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+
+  color: $color-black;
+  background-color: $color-white;
+
+
+  overflow-x: hidden;
+
+  &.preloading {
+    overflow: hidden;
+  }
+
+  &.transitioning {
+    cursor: wait !important;
+    pointer-events: none !important;
+  }
+}
+
+body {
+    z-index: 20;
+    width: auto;
+  main {
+    z-index: 19;
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+.backend__partial {
+  grid-column: 1 / span 12;
+  padding: 16px;
+
+  color: darken(red, 30%);
+  background-color: lighten(red, 40%);
+  border: 4px dashed lighten(red, 30%);
+
+}

@@ -1,0 +1,45 @@
+.sectiontitle.tk-bely-display.purple.stattitle {
+    grid-column: 1/span 5;
+    grid-row: 1;
+}
+.graph {
+    grid-row: 1;
+    grid-column: 2/span 6;
+}
+.textquarter {
+    grid-column: 9/span 3;
+    line-height: 32px;
+}
+.txtbely {
+    font-size: 21px;
+}
+.graph svg#Calque_1 {
+    height: 110%;
+}
+.target{
+    grid-row: 2;
+    grid-column: span 12;
+    margin-top: 100px;
+}
+.collec{
+    grid-column: 1/span 5;
+}
+.pie {
+    grid-column: 6/span 6;
+}
+.pie svg#Calque_1{
+    transform: scale(1.9);
+}
+.collec svg#Calque_1 {
+    transform: scale(1.23);
+    margin-top: -50px;
+}
+.quote {
+    grid-row: 2;
+    grid-column: span 12;
+    font-size: 9px;
+    margin-top: -30px;
+}
+.stat.grid12.ma.wi90 {
+    overflow: hidden;
+}

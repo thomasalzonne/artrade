@@ -1,0 +1,71 @@
+@mixin transition(
+  $prop,
+  $duration: $transition-duration,
+  $timing-function: $transition-timing-function,
+  $delay: 0s,
+  $important: false
+) {
+  @if $important {
+    transition-property: $prop !important;
+    transition-duration: $duration !important;
+    transition-timing-function: $timing-function !important;
+    transition-delay: $delay !important;
+  } @else {
+    transition-property: $prop;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+    transition-delay: $delay;
+  }
+}
+
+@mixin stagger(
+  $count: 10,
+  $interval: 100,
+  $initial-offset: 0s,
+  $type: transition
+) {
+  $interval: strip-unit($interval);
+
+  @for $i from 0 through $count {
+    &:nth-child(#{$i + 1}) {
+      #{$type}-delay: #{($i * $interval * 1ms) + $initial-offset};
+    }
+  }
+}
+
+@mixin animation(
+  $name,
+  $duration,
+  $delay: 0s,
+  $count: 1,
+  $direction: normal,
+  $timing-function: ease
+) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-fill-mode: both;
+  animation-iteration-count: $count;
+  animation-direction: $direction;
+  animation-timing-function: $timing-function;
+
+  @content;
+}
+
+@function easing($type, $func) {
+  @if map-has-key($easings, $type) {
+    @if not($func) {
+      @return map-get($easings, $type);
+    } @else {
+      $funcs: map-get($easings, $type);
+
+      @if map-has-key($funcs, $func) {
+        @return map-get($funcs, $func);
+      } @else {
+        @error "Unknown easing function #{$func} in type #{$type}";
+      }
+    }
+  } @else {
+    @error "Unknown easing type: #{$type}";
+  }
+}

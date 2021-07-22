@@ -1,0 +1,19 @@
+/*!
+  Theme Name: Giesper
+  Version: 1.0.0
+  Requires at least: 5.5
+  Requires PHP: 7.2
+  Description: Thème Giesper
+  Author: Mashvp
+  Author URI: https://mashvp.com
+  Theme URI: http://www.giesper.fr/
+  License: UNLICENSED
+*/
+
+
+@import './reset';
+
+@import './vars/_all';
+@import './func/_all';
+@import './layouts/_all';
+@import './elements/_all';
