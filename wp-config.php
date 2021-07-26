@@ -26,7 +26,7 @@ define( 'DB_NAME', 'artrade' );
 define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'toor' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );

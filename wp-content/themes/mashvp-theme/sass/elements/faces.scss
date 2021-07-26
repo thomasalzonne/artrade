@@ -1,0 +1,34 @@
+.firstname, .lastname{
+    font-size: 36px;
+    line-height: 43px;
+}
+.poste, .facedesc{
+    font-size: 21px;
+}
+.facestitle.sectiontitle.purple.tk-bely-display {
+    grid-column: 1/span 4;
+}
+.face.face2 {
+    grid-row: 2;
+    grid-column: 2/span 5;
+}
+.face.face1 {
+    grid-column: 5/span 6;
+}
+.face.face3 {
+    grid-row: 3;
+    grid-column: 7/span 5;
+}
+.pdp {
+    aspect-ratio: 200/200;
+    width: 211px;
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+}
+.face {
+    display: flex;
+}
+.facesC {
+    margin-bottom: 200px;
+}

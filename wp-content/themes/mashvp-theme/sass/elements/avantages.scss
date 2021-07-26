@@ -1,0 +1,84 @@
+.sectiontitle.purple.tk-bely-display.avantagetitle {
+    grid-column: 1/span 6;
+    width: 95%;
+    z-index: 2;
+}
+.containerav.grid12 {
+    grid-row: 2;
+    grid-column: span 12;
+    margin-top: -170px;
+}
+.avantagestxt {
+    grid-column: 9/span 4;
+    width: 80%;
+}
+.gallery {
+    grid-column: 2/Span 6;
+    position: relative;
+    z-index: 1;
+    margin-top: 70px;
+}
+.avimg {
+    position: absolute;
+    aspect-ratio: 303/400;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+.avimg.avimg1 {
+    top: 0;
+    right: -20px;
+    z-index: 10;
+}
+.avimg.avimg3 {
+    left: -30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+}
+.avimg.avimg2 {
+    bottom: -120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 5;
+}
+.avtoptxt.purple.tk-objektiv-mk1 {
+    margin-bottom: 50px;
+}
+.avtitle.sectionsubtitle.green.tk-objektiv-mk1 {
+    line-height: 45px;
+    margin-bottom: 40px;
+}
+.avdesc {
+    width: 90%;
+}
+.functions.grid12.wi90.ma {
+    margin-top: 260px;
+}
+.sectiontitle.sectionsubtitle.green.tk-objektiv-mk1 {
+    grid-column: 1/Span 3;
+    width: 70%;
+    grid-row: 1;
+}
+.funcimg {
+    grid-row: 1;
+    grid-column: 2/span 6;
+    aspect-ratio: 545/545;
+    height: 114%;
+    margin-top: 20px;
+    background-position: center;
+    background-size: cover;
+}
+.funcdesc.purple.tk-objektiv-mk1 {
+    grid-column: 9/span 3;
+    margin-top: 120px;
+    width: 85%;
+}
+.functions.grid12.wi90.ma {
+    overflow: hidden;
+}
+section.avantagesC {
+    margin-bottom: 140px;
+}

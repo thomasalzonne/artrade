@@ -20,6 +20,7 @@
       }
     </style>
   </noscript>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-CS78K12JMK"></script> -->
   <script>
     window.dataLayer = window.dataLayer || [];

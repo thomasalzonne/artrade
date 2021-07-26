@@ -1,0 +1,93 @@
+.roadmaptitle.sectiontitle.purple.tk-bely-display {
+    grid-column: 1/span 4;
+}
+div#linebg {
+    grid-row: 2;
+    grid-column: 2/Span 10;
+}
+.roadmap.grid12.ma.wi90 {
+    position: relative;
+}
+.grid10{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+}
+.events {
+    grid-row: 2;
+    grid-column: 2/span 10;
+}
+.eventtitle {
+    font-size: 48px;
+    line-height: 62px;
+}
+.eventdesc.purple {
+    line-height: 32px;
+}
+.event.event1{
+    grid-column: 6/span 3 !important;
+    margin-top: -110px;
+}
+.event1 .eventdesc {
+    width: 75%;
+}
+.event.event2 {
+    grid-column: 1/span 3 !important;
+    margin-top: 60px;
+    margin-left: -10px;
+}
+.event2 .eventdesc{
+    width: 90%;
+}
+.event.event3 {
+    grid-column: 5/span 4 !important;
+    margin-top: -90px;
+}
+.event3 .eventdesc {
+    width: 80%;
+}
+.event.event4 {
+    grid-column: 8/span 3 !important;
+    margin-top: -40px;
+    margin-left: 20px;
+}
+.event.event5 {
+    grid-row: 4 !important;
+    grid-column: 1/span 4 !important;
+    margin-top: 30px;
+}
+.event5 .eventdesc {
+    width: 80%;
+}
+.event.event6 {
+    grid-row: 6;
+    grid-column: 3/span 4 !important;
+    margin-top: 120px;
+    margin-left: -10px;
+}
+.event6 .eventdesc {
+    width: 80%;
+}
+.event.event7 {
+    grid-row: 6 !important;
+    grid-column: 8/span 3 !important;
+    margin-top: 90px;
+}
+.event.event8 {
+    grid-row: 8;
+    grid-column: 6/span 3 !important;
+    margin-top: 80px;
+    margin-left: -30px;
+}
+.event.event9 {
+    grid-row: 9;
+    grid-column: 4/span 5 !important;
+    margin-top: 150px;
+}
+.event9 .eventdesc {
+    width: 90%;
+}
+section.roadmapC {
+    margin-bottom: 150px;
+}

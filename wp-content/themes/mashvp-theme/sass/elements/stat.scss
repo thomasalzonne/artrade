@@ -14,7 +14,8 @@
     font-size: 21px;
 }
 .graph svg#Calque_1 {
-    height: 110%;
+    aspect-ratio: 467/430;
+    width: 630px;
 }
 .target{
     grid-row: 2;
@@ -42,4 +43,62 @@
 }
 .stat.grid12.ma.wi90 {
     overflow: hidden;
+}
+.st0 {
+    fill: #8F4FEB !important;
+}
+.st1 {
+    fill: #44E559 !important;
+}
+.boomtxt {
+    grid-column: 8/span 4;
+}
+.boom.grid12.ma.wi90 {
+    margin-top: 100px;
+    margin-bottom: 130px;
+}
+.boomtitle.sectionsubtitle.green.tk-objektiv-mk1 {
+    width: 80%;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+.boomdesc.purple.tk-objektiv-mk1 {
+    line-height: 32px;
+}
+.boomgallery {
+    grid-column: 2/span 6;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+}
+.img.img1 {
+    grid-column: 1/span 4;
+    grid-row: 1;
+    z-index: 10;
+}
+.img.img2 {
+    grid-row: 1;
+    grid-column: 2/span 4;
+    z-index: 5;
+    margin-top: 52px;
+}
+.img.img3 {
+    grid-row: 1;
+    grid-column: 3/span 4;
+    z-index: 1;
+    margin-top: 104px;
+}
+.boomgallery .img {
+    aspect-ratio: 303/400;
+    background-position: center;
+    background-size: cover;
+    height: calc((400/303) * 50%);
+}
+.boomsource.purple.tk-objektiv-mk1 {
+    grid-row: 2;
+    grid-column: span 6;
+    font-size: 9px;
+    line-height: 20px;
+    margin-top: -135px;
 }

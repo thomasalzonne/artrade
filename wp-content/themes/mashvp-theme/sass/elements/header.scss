@@ -37,6 +37,10 @@ ul#menu-mainnav {
 }
 .raised {
     grid-column: 8/span 5;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-left: auto;
 }
 .raisedtxt,.endin {
     line-height: 23px;

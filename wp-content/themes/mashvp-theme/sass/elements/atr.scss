@@ -1,0 +1,21 @@
+.sectiontitle.purple.tk-bely-display.atrtitle {
+    grid-column: 1/span 5;
+}
+.points.grid12 {
+    grid-row: 2;
+    grid-column: span 12;
+}
+.point {
+    grid-column: span 4;
+    width: 80%;
+    text-align: center;
+}
+.pointimg {
+    aspect-ratio: 250/250;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.atrC {
+    margin-bottom: 170px;
+}
