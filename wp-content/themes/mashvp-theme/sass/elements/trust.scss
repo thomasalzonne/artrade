@@ -11,3 +11,23 @@
 .trustC{
     margin-bottom: 300px;
 }
+@media screen and (max-width: 800px){
+    .trust.grid12.wi90.ma {
+        display: flex;
+        flex-direction: column;
+    }
+    .trustpayment{
+        height: 400px;
+    }
+    .trustC{
+        margin-bottom: 150px;
+    }
+}
+@media screen and (max-width: 450px){
+    .trustpayment{
+        height: 200px;
+    }
+    .trustC{
+        margin-bottom: 100px;
+    }
+}

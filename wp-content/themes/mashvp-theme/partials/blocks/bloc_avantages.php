@@ -2,7 +2,7 @@
 $images = get_sub_field('galerie');
 $i = 0;
 ?>
-<section class="avantagesC">
+<section class="avantagesC" id="avantagesC">
     <div class="avantages grid12 wi90 ma">
         <div class="sectiontitle purple tk-bely-display avantagetitle"><?= get_sub_field('title') ?></div>
         <div class="containerav grid12">
@@ -10,7 +10,15 @@ $i = 0;
                 <div class="gallery">
                     <?php foreach( $images as $image ): ?>
                         <?php $i++; ?>
-                        <div class="avimg avimg<?= $i ?>" style="background-image:url('<?= $image ?>')"></div>
+                        <?php if($i == 1): ?>
+                            <div class="avimg avimg<?= $i ?> rellax" data-rellax-speed="0.2" style="background-image:url('<?= $image ?>')"></div>
+                        <?php endif; ?>
+                        <?php if($i == 2): ?>
+                            <div class="avimg avimg<?= $i ?> rellax" data-rellax-speed="-0.2" style="background-image:url('<?= $image ?>')"></div>
+                        <?php endif; ?>
+                        <?php if($i == 3): ?>
+                            <div class="avimg avimg<?= $i ?> rellax" data-rellax-speed="0" style="background-image:url('<?= $image ?>')"></div>
+                        <?php endif; ?>
                     <?php endforeach; ?>
                 </div>
             <?php endif; ?>

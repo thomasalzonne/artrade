@@ -8,3 +8,9 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+@media screen and (max-width: 450px){
+    .mobile.grid12.wi90.ma {
+        display: flex;
+        flex-direction: column;
+    }
+}

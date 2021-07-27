@@ -15,7 +15,24 @@
     width: 100%;
     background-position: center;
     background-size: cover;
+    transition-duration: 1s;
 }
 .atrC {
     margin-bottom: 170px;
+}
+.point:hover .pointimg{
+    transform: rotateZ(20deg);
+}
+@media screen and (max-width: 800px){
+    .atr.grid12.ma.wi90 {
+        display: flex;
+        flex-direction: column;
+    }
+    .points.grid12 {
+        display: flex;
+        flex-direction: column;
+    }
+    .point{
+        margin: auto;
+    }
 }

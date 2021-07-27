@@ -1,4 +1,4 @@
-<section class="consciousC">
+<section class="consciousC" id="consciousC">
     <div class="conscious grid12 ma wi90">
         <div class="sectiontitle conscioustitle purple tk-bely-display"><?= get_sub_field('title') ?></div>
         <div class="consciousimg" style="background-image: url('<?= get_sub_field('image') ?>')"></div>

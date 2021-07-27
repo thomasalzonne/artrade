@@ -12,4 +12,5 @@
 <?= mashvp_do_blocks('trust-content') ?>
 <?= mashvp_do_blocks('faces-content') ?>
 <?= mashvp_do_blocks('talk-content') ?>
+<?= mashvp_do_blocks('footer-content') ?>
 <?php get_footer() ?>

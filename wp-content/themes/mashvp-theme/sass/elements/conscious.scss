@@ -10,6 +10,7 @@
     background-position: center;
     background-size: cover;
     margin-top: -60px;
+    transition-duration: 1s;
 }
 .conscioustxt.tk-objektiv-mk1.purple {
     grid-row: 1/span 2;
@@ -26,4 +27,21 @@
 }
 .consciousC{
     margin-bottom: 140px;
+}
+.consciousC:hover .consciousimg{
+    transform: rotateY(360deg);
+}
+@media screen and (max-width: 800px){
+    .conscious.grid12.ma.wi90 {
+        display: flex;
+        flex-direction: column;
+    }
+    .conscioustxt.tk-objektiv-mk1.purple{
+        margin-left: unset;
+    }
+}
+@media screen and (max-width: 450px){
+    .conscioustxt.tk-objektiv-mk1.purple{
+        width: 100%;
+    }
 }

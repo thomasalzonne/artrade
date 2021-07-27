@@ -5,6 +5,7 @@ body {
   min-height: 100vh;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 
   color: $color-black;
   background-color: $color-white;
@@ -28,7 +29,7 @@ body {
   main {
     z-index: 19;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 }
 

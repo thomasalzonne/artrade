@@ -1,4 +1,4 @@
-<section class="headerC">
+<section class="headerC" id="headerC">
     <div class="header grid12 wi90 ma">
         <div class="navbar grid12">
             <div class="logo"><?php include  get_template_directory() . "/assets/img/LOGO.svg" ?></div>
@@ -18,4 +18,5 @@
         <div class="headervideo">
         </div>
     </div>
+    <div class="navigation"></div>
 </section>

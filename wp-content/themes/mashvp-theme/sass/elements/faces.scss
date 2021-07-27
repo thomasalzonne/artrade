@@ -32,3 +32,22 @@
 .facesC {
     margin-bottom: 200px;
 }
+@media screen and (max-width: 800px){
+    .faces.grid12.ma.wi90 {
+        display: flex;
+        flex-direction: column;
+    }
+    .face.face1 {
+        width: fit-content;
+        margin-left: auto;
+    }
+    .face.face2 {
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 450px){
+    .pdp {
+        width: 190px;
+    }
+}

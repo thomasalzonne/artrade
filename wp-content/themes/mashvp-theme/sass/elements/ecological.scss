@@ -49,3 +49,28 @@ section.ecologieC {
 .ecotxttititle.sectionsubtitle.green.tk-objektiv-mk1 {
     margin-bottom: 50px;
 }
+@media screen and (max-width: 800px){
+    .ecologie.grid12.ma.wi90 {
+        display: flex;
+        flex-direction: column;
+    }
+    .it.grid12{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 450px){
+    .it.grid12{
+        display: flex;
+        flex-direction: column;
+    }
+    .ecotxtit{
+        margin-left: unset;
+    }
+    .ti.grid12 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .ecoimgti {
+        aspect-ratio: 640/640;
+    }
+}

@@ -39,7 +39,7 @@
 }
 .avimg.avimg2 {
     bottom: -120px;
-    left: 0;
+    left: 75px;
     right: 0;
     margin: auto;
     z-index: 5;
@@ -81,4 +81,67 @@
 }
 section.avantagesC {
     margin-bottom: 140px;
+}
+@media screen and (max-width: 800px){
+    .avantages.grid12.wi90.ma {
+        display: flex;
+        flex-direction: column;
+    }
+    .containerav.grid12 {
+        margin-top: unset;
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery {
+        margin-bottom: 170px;
+        margin-top: 50px;
+        height: 500px;
+    }
+    .avimg.avimg1 {
+        right: 90px;
+    }
+    .avimg.avimg2 {
+        left: 195px;
+    }
+    .avimg.avimg3 {
+        left: 90px;
+    }
+    .functions.grid12.wi90.ma {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+    .funcdesc.purple.tk-objektiv-mk1{
+        margin-top: unset;
+    }
+}
+@media screen and (max-width: 450px){
+    .avimg{
+        height: 250px;
+    }
+    .gallery{
+        margin-bottom: unset;
+    }
+    .avimg.avimg1 {
+        right: 30px;
+    }
+    .avimg.avimg2 {
+        left: 95px;
+        bottom: 40px;
+    }
+    .avimg.avimg3 {
+        left: 30px;
+    }
+    .avantagestxt{
+        width: 100%;
+    }
+    .sectiontitle.sectionsubtitle.green.tk-objektiv-mk1{
+        width: 100%;
+    }
+    .funcdesc.purple.tk-objektiv-mk1{
+        width: 100%;
+    }
+    section.avantagesC{
+        margin-bottom: 100px;
+    }
 }

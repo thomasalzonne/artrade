@@ -1,0 +1,92 @@
+.footernav {
+    grid-row: 1;
+    grid-column: 1/span 6;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 1em;
+}
+.followus {
+    grid-row: 1;
+    grid-column: 9/span 3;
+}
+.contact {
+    grid-row: 2;
+    grid-column: 9/span 3;
+}
+.legals {
+    grid-row: 3;
+    grid-column: 1/span 6;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.copyright {
+    grid-row: 3;
+    grid-column: 9/span 4;
+    font-size: 12px;
+}
+.contact {
+    grid-row: 2;
+    grid-column: 9/span 3;
+    font-size: 15px;
+    margin-bottom: 55px;
+}
+.contacttitle.green {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.footernactitle.green, .followtitle.purple {
+    font-size: 12px;
+}
+a.legallink.purple {
+    text-decoration: none;
+}
+.footernactitle.green {
+    grid-column: 1/span 2;
+}
+.linksfooter {
+    grid-row: 2;
+    grid-column: 1/span 6;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 1em;
+}
+a.footernavlink.purple {
+    grid-column: span 2;
+    text-decoration: none;
+}
+a.contactmail.purple {
+    text-decoration: none;
+}
+.logosfooter {
+    display: flex;
+    margin-top: 23px;
+}
+a.footerlogolink {
+    height: 25px;
+    width: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 450px){
+    .footer.grid12.ma.wi90.tk-objektiv-mk1.nogrg {
+        display: flex;
+        flex-direction: column;
+    }
+    .followus {
+        margin: 20px 0;
+    }
+    .copyright.purple {
+        margin-top: 10px;
+    }
+    .contact{
+        margin-bottom: 20px;
+    }
+    .footernactitle.green {
+        grid-column: 1/span 6;
+    }
+}

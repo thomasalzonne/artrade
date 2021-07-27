@@ -8,11 +8,14 @@
 <g>
 	<g>
 		<g>
-			<rect x="32.7" y="188.6" class="st0" width="51.7" height="1.1"/>
+			<rect x="32.7" y="188.6" class="st0" width="51.7" height="1.1" class="rect1">
+				<animate class="anim" attributeName="height" values="0;1.1" dur="1s"/>
+				<animate class="anim" attributeName="y" values="189.7;188.6" dur="1s"/>
+			<rect/>
 		</g>
 	</g>
 	<g>
-		<g>
+		<g style='display:none'>
 			<path class="st1" d="M36.7,221.7v-0.9c-0.7,0-1.2-0.2-1.6-0.4l0.1-0.9c0.5,0.3,1,0.5,1.5,0.5v-1.8c-0.6-0.2-1-0.4-1.2-0.7
 				c-0.3-0.3-0.4-0.6-0.4-1c0-0.4,0.1-0.8,0.4-1.1c0.3-0.3,0.7-0.5,1.2-0.5v-0.9h0.6v0.9c0.3,0,0.5,0.1,0.7,0.1
 				c0.2,0.1,0.5,0.2,0.6,0.3l-0.2,0.9c-0.4-0.2-0.8-0.3-1.2-0.4v1.6c0.6,0.2,1,0.5,1.3,0.8c0.3,0.3,0.4,0.7,0.4,1.1
@@ -74,11 +77,14 @@
 <g>
 	<g>
 		<g>
-			<rect x="104.6" y="182.8" class="st1" width="51.7" height="7"/>
+			<rect x="104.6" y="182.8" class="st1" width="51.7" height="7" class="rect2">
+				<animate class="anim" attributeName="height" values="0;7" dur="1.5s" />
+				<animate class="anim" attributeName="y" values="189.7;182.8" dur="1.5s" />
+			<rect/>
 		</g>
 	</g>
 	<g>
-		<g>
+		<g style='display:none'>
 			<path class="st1" d="M106.2,221.7v-0.9c-0.7,0-1.2-0.2-1.6-0.4l0.1-0.9c0.5,0.3,1,0.5,1.5,0.5v-1.8c-0.6-0.2-1-0.4-1.2-0.7
 				c-0.3-0.3-0.4-0.6-0.4-1c0-0.4,0.1-0.8,0.4-1.1c0.3-0.3,0.7-0.5,1.2-0.5v-0.9h0.6v0.9c0.3,0,0.5,0.1,0.7,0.1
 				c0.2,0.1,0.5,0.2,0.6,0.3l-0.2,0.9c-0.4-0.2-0.8-0.3-1.2-0.4v1.6c0.6,0.2,1,0.5,1.3,0.8c0.3,0.3,0.4,0.7,0.4,1.1
@@ -147,11 +153,14 @@
 <g>
 	<g>
 		<g>
-			<rect x="176.5" y="39.2" class="st0" width="51.7" height="150.5"/>
+			<rect x="176.5" y="39.2" class="st0" width="51.7" height="150.5" class="rect3">
+				<animate class="anim" attributeName="height" values="0;150.5" dur="3s" begin="indefinite" />
+				<animate class="anim" attributeName="y" values="189.7;39.2" dur="3s" begin="indefinite"/>
+			<rect/>
 		</g>
 	</g>
 	<g>
-		<g>
+		<g style='display:none'>
 			<path class="st1" d="M173.3,221.7v-0.9c-0.7,0-1.2-0.2-1.6-0.4l0.1-0.9c0.5,0.3,1,0.5,1.5,0.5v-1.8c-0.6-0.2-1-0.4-1.2-0.7
 				c-0.3-0.3-0.4-0.6-0.4-1c0-0.4,0.1-0.8,0.4-1.1c0.3-0.3,0.7-0.5,1.2-0.5v-0.9h0.6v0.9c0.3,0,0.5,0.1,0.7,0.1
 				c0.2,0.1,0.5,0.2,0.6,0.3l-0.2,0.9c-0.4-0.2-0.8-0.3-1.2-0.4v1.6c0.6,0.2,1,0.5,1.3,0.8c0.3,0.3,0.4,0.7,0.4,1.1
@@ -217,3 +226,6 @@
 	</g>
 </g>
 </svg>
+<div class="p1 green tk-objektiv-mk1"><span>$</span> <span class="price">2020942331</span></div>
+<div class="p2 green tk-objektiv-mk1"><span>$</span> <span class="price">93844548</span></div>
+<div class="p3 green tk-objektiv-mk1"><span>$</span> <span class="price">15289191</span></div>
