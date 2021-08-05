@@ -7,7 +7,11 @@
                     <?php if(have_rows('link')): ?>
                         <div class="linksfooter">
                             <?php while(have_rows('link')): the_row() ?>
-                                <a class="footernavlink purple" href="<?= get_sub_field('url') ?>"><?= get_sub_field('texte') ?></a>
+                                <?php if(get_sub_field('texte') == "buy token"): ?>
+                                    <a class="footernavlink purple" href="<?= get_sub_field('url') ?>"><?= get_sub_field('texte') ?> <span><?php include  get_template_directory() . "/assets/img/panierhf.svg" ?></span></a>
+                                <?php else: ?>
+                                    <a class="footernavlink purple" href="<?= get_sub_field('url') ?>"><?= get_sub_field('texte') ?></a>
+                                <?php endif; ?>
                             <?php endwhile; ?>
                         </div>
                     <?php endif; ?>

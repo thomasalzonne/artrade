@@ -15,6 +15,7 @@
                 <div class="money green tk-bely-display">230,022 $</div>
             </div>
         </div>
+        <div class="buytoken purple tk-objektiv-mk1"><?= get_sub_field('buy') ?><span class="buyicon"><?php include  get_template_directory() . "/assets/img/panier.svg" ?></span></div>
         <div class="headervideo">
         </div>
     </div>

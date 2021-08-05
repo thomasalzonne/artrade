@@ -2,7 +2,7 @@
     <div class="roadmap grid12 ma wi90">
         <div class="roadmaptitle sectiontitle purple tk-bely-display"><?= get_sub_field('title') ?></div>
         <div class="linebg" id="linebg">
-            <?php include  get_template_directory() . "/assets/img/Roadmap.svg" ?>
+            <?php include  get_template_directory() . "/assets/img/road-map-mashvp.svg" ?>
         </div>
         <?php if(have_rows('event')): ?>
             <div class="events grid10">

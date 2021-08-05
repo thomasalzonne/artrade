@@ -11,13 +11,13 @@ $i = 0;
                     <?php foreach( $images as $image ): ?>
                         <?php $i++; ?>
                         <?php if($i == 1): ?>
-                            <div class="avimg avimg<?= $i ?> rellax" data-rellax-speed="0.2" style="background-image:url('<?= $image ?>')"></div>
+                            <div class="img avimg avimg<?= $i ?> rellax" data-rellax-speed="0.1" data-rellax-mobile-speed="0" data-rellax-tablet-speed="0" data-rellax-desktop-speed="0.1"><img src="<?= $image ?>" alt=""></div>
                         <?php endif; ?>
                         <?php if($i == 2): ?>
-                            <div class="avimg avimg<?= $i ?> rellax" data-rellax-speed="-0.2" style="background-image:url('<?= $image ?>')"></div>
+                            <div class="img avimg avimg<?= $i ?> rellax" data-rellax-speed="-0.1" data-rellax-mobile-speed="0" data-rellax-tablet-speed="0" data-rellax-desktop-speed="-0.1"><img src="<?= $image ?>" alt=""></div>
                         <?php endif; ?>
                         <?php if($i == 3): ?>
-                            <div class="avimg avimg<?= $i ?> rellax" data-rellax-speed="0" style="background-image:url('<?= $image ?>')"></div>
+                            <div class="img avimg avimg<?= $i ?> rellax" data-rellax-speed="0" data-rellax-mobile-speed="0" data-rellax-tablet-speed="0" data-rellax-desktop-speed="0"><img src="<?= $image ?>" alt=""></div>
                         <?php endif; ?>
                     <?php endforeach; ?>
                 </div>
@@ -39,9 +39,9 @@ $i = 0;
         <?php while(have_rows('titre_image_texte')): the_row() ?>
             <div class="functions grid12 wi90 ma">
                 <div class="sectiontitle sectionsubtitle green tk-objektiv-mk1"><?= get_sub_field('title') ?></div>
-                <div class="funcimg" style="background-image:url('<?= get_sub_field('image') ?>')"></div>
+                <div class="funcimg rellax" data-rellax-speed="-1" data-rellax-mobile-speed="0" data-rellax-tablet-speed="0" data-rellax-desktop-speed="-1" style="background-image:url('<?= get_sub_field('image') ?>')"></div>
                 <div class="funcdesc purple tk-objektiv-mk1"><?= get_sub_field('texte') ?></div>
             </div>
         <?php endwhile; ?>
     <?php endif; ?>
-    </section>
+</section>

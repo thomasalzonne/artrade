@@ -20,9 +20,6 @@
 .atrC {
     margin-bottom: 170px;
 }
-.point:hover .pointimg{
-    transform: rotateZ(20deg);
-}
 @media screen and (max-width: 800px){
     .atr.grid12.ma.wi90 {
         display: flex;
@@ -34,5 +31,10 @@
     }
     .point{
         margin: auto;
+    }
+}
+@media screen and (max-width: 450px) {
+    .pointimg{
+        height: 350px;
     }
 }

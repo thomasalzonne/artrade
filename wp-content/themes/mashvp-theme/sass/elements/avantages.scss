@@ -14,35 +14,33 @@
 }
 .gallery {
     grid-column: 2/Span 6;
-    position: relative;
     z-index: 1;
     margin-top: 70px;
-}
-.avimg {
-    position: absolute;
-    aspect-ratio: 303/400;
-    height: 400px;
-    background-position: center;
-    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
 }
 .avimg.avimg1 {
-    top: 0;
-    right: -20px;
+    grid-column: 3/span 4;
+    grid-row: 1;
     z-index: 10;
+    margin-top: 60px;
+    margin-left: 80px;
 }
 .avimg.avimg3 {
-    left: -30px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    grid-column: 1/span 4;
+    grid-row: 1;
     z-index: 1;
+    margin-top: 200px;
+    margin-left: 80px;
 }
 .avimg.avimg2 {
-    bottom: -120px;
-    left: 75px;
-    right: 0;
-    margin: auto;
+    grid-column: 2/span 4;
+    grid-row: 1;
     z-index: 5;
+    margin-top: 370px;
+    margin-left: 80px;
 }
 .avtoptxt.purple.tk-objektiv-mk1 {
     margin-bottom: 50px;
@@ -70,19 +68,60 @@
     margin-top: 20px;
     background-position: center;
     background-size: cover;
+    transition-duration: 1s;
 }
 .funcdesc.purple.tk-objektiv-mk1 {
     grid-column: 9/span 3;
     margin-top: 120px;
     width: 85%;
 }
-.functions.grid12.wi90.ma {
-    overflow: hidden;
+
+.funcimg.rellax {
+    margin-top: -400px;
+    height: 600px;
 }
 section.avantagesC {
     margin-bottom: 140px;
 }
+@media screen and (max-width: 1300px) {
+    .gallery{
+        grid-column: 1/span 6;
+    }
+    .sectiontitle.purple.tk-bely-display.avantagetitle{
+        width: 100%;
+    }
+    .funcimg.rellax{
+        margin-top: -500px;
+    }
+}
+@media screen and (max-width: 1040px){
+    .funcimg.rellax{
+        margin-top: 130px;
+    }
+    .sectiontitle.purple.tk-bely-display.avantagetitle{
+        width: 100%;
+    }
+    .avimg.avimg3, .avimg.avimg1, .avimg.avimg2{
+        margin-left: unset;
+    }
+}
 @media screen and (max-width: 800px){
+    .img{
+        height: 325px;
+        width: 200px;
+    }
+    .avimg.avimg1{
+        margin-left: 80px;
+    }
+    .avimg.avimg2{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 170px;
+    }
+    .img.avimg.avimg3.rellax {
+        margin-left: 190px;
+        margin-top: 100px;
+    }
     .avantages.grid12.wi90.ma {
         display: flex;
         flex-direction: column;
@@ -97,15 +136,6 @@ section.avantagesC {
         margin-top: 50px;
         height: 500px;
     }
-    .avimg.avimg1 {
-        right: 90px;
-    }
-    .avimg.avimg2 {
-        left: 195px;
-    }
-    .avimg.avimg3 {
-        left: 90px;
-    }
     .functions.grid12.wi90.ma {
         margin-top: 60px;
         display: flex;
@@ -114,23 +144,25 @@ section.avantagesC {
     .funcdesc.purple.tk-objektiv-mk1{
         margin-top: unset;
     }
+    .funcimg.rellax{
+        margin-top: 0;
+    }
 }
 @media screen and (max-width: 450px){
     .avimg{
         height: 250px;
     }
+    .funcimg.rellax {
+        height: 337px;        
+    }
     .gallery{
         margin-bottom: unset;
     }
-    .avimg.avimg1 {
-        right: 30px;
+    .avimg.avimg1{
+        grid-column: 2/span 4;
     }
-    .avimg.avimg2 {
-        left: 95px;
-        bottom: 40px;
-    }
-    .avimg.avimg3 {
-        left: 30px;
+    .img.avimg.avimg3.rellax{
+        margin-left: unset;
     }
     .avantagestxt{
         width: 100%;

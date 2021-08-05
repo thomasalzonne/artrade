@@ -10,7 +10,7 @@ ul#menu-mainnav {
     justify-content: space-between;
 }
 .menu {
-    grid-column: 6/span 7;
+    grid-column: 9/span 4;
     display: flex;
 }
 .menu-mainnav-container {
@@ -23,6 +23,12 @@ ul#menu-mainnav {
     color: #8f4feb;
     font-family: objektiv-mk1;
     font-weight: bold;
+    display: flex;
+}
+span.iconheader {
+    width: 22px;
+    height: 20px;
+    margin-left: 8px;
 }
 .headertitle.title {
     grid-column: 1/span 9;
@@ -30,17 +36,21 @@ ul#menu-mainnav {
 }
 .ico {
     grid-column: span 12;
-    margin-bottom: 100px;
 }
 .countdown {
     grid-column: 1/span 7;
 }
 .raised {
-    grid-column: 8/span 5;
+    grid-column: 9/span 4;
     display: flex;
     flex-direction: column;
     width: fit-content;
-    margin-left: auto;
+}
+svg#Calque_1 path.st1 {
+    fill: #8F4FEB;
+}
+svg#Calque_1 path.st0 {
+    fill: #44E559;
 }
 .raisedtxt,.endin {
     line-height: 23px;
@@ -80,6 +90,32 @@ a.navigationlink {
     display: flex;
     margin: 17px 0;
     border-radius: 10px;
+}
+.buytoken {
+    grid-column: 8/span 2;
+    background-color: #44E559;
+    height: 43px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    line-height: 43px;
+}
+span.buyicon {
+    margin-left: 10px;
+    margin-top: 3px;
+}
+@media screen and (max-width: 1300px) {
+    .navigation{
+        right: 2%;
+    }
+}
+@media screen and (max-width: 1040px){
+    .raised{
+        grid-column: 8/span 5;
+    }
+    .navigation{
+        right: 3%;
+    }
 }
 @media screen and (max-width: 800px){
     .headertitle.title{

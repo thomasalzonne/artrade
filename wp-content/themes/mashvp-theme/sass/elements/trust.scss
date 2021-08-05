@@ -1,5 +1,5 @@
 .trusttitle.sectiontitle.purple.tk-bely-display {
-    grid-column: 1/span 5;
+    grid-column: 1/span 4;
     width: 90%;
 }
 .trustpayment {
@@ -10,6 +10,11 @@
 }
 .trustC{
     margin-bottom: 300px;
+}
+@media screen and (max-width: 1040px) {
+    .trusttitle.sectiontitle.purple.tk-bely-display{
+        grid-column: 1/span 5;
+    }
 }
 @media screen and (max-width: 800px){
     .trust.grid12.wi90.ma {

@@ -1,3 +1,11 @@
+<?php
+    function setv($inom,$ival)
+    {
+        echo '<script>';
+        echo $inom."=".$ival.";";
+        echo '</script>';
+    }
+?>
 <section class="statC" id="statC">
     <div class="stat grid12 ma wi90">
         <div class="sectiontitle tk-bely-display purple stattitle"><?= get_sub_field('title') ?></div>
@@ -16,7 +24,8 @@
                 <?php include  get_template_directory() . "/assets/img/INFOGRAPHIE_2.3.svg" ?>
                 <?php include  get_template_directory() . "/assets/img/INFOGRAPHIE_2.4.svg" ?>
                 <?php include  get_template_directory() . "/assets/img/INFOGRAPHIE_2.5.svg" ?>
-  
+                <?php include  get_template_directory() . "/assets/img/INFOGRAPHIE_2.6.svg" ?>
+                <?php include  get_template_directory() . "/assets/img/INFOGRAPHIE_2.7.svg" ?>
             </div>
             <div class="quote purple tk-objektiv-mk1">Market distribution (USD traded) between segments - Q1 2021 report from nonfungible.com </div>
         </div>
@@ -33,13 +42,13 @@
                         <?php foreach( $images as $image ): ?>
                             <?php $i++; ?>
                             <?php if($i == 1): ?>
-                                <div class="img img<?= $i ?> rellax" data-rellax-speed="0.5" style="background-image: url('<?= $image ?>')"></div>
+                                <div class="img img<?= $i ?>"><img src="<?= $image ?>" alt=""></div>
                             <?php endif; ?>
                             <?php if($i == 2): ?>
-                                <div class="img img<?= $i ?> rellax" data-rellax-speed="0" style="background-image: url('<?= $image ?>')"></div>
+                                <div class="img img<?= $i ?>"><img src="<?= $image ?>" alt=""></div>
                             <?php endif; ?>
                             <?php if($i == 3): ?>
-                                <div class="img img<?= $i ?> rellax" data-rellax-speed="-0.5" style="background-image: url('<?= $image ?>')"></div>
+                                <div class="img img<?= $i ?>"><img src="<?= $image ?>" alt=""></div>
                             <?php endif; ?>
                         <?php endforeach; ?>
                     </div>
@@ -54,7 +63,7 @@
     <?php endif; ?>
 </section>
 <script>
-    var elm = document.querySelector('.statC')
+    var elm = document.querySelector('.p3')
     function checkVisible(elm) {
         if(elm){
             var rect = elm.getBoundingClientRect();
@@ -83,14 +92,26 @@
     }
     window.addEventListener("scroll", addanim);
     function addanim(){
-        console.log(elementInViewport2(el))
         if(checkVisible(elm)){
             var anim = document.querySelectorAll('.anim')
+            var rect3a = document.querySelector('.rect3')
+            console.log(rect3a)
+            var rect1 = document.querySelector('.rect1')
+            var rect2 = document.querySelector('.rect2')
+            setTimeout(() => {
+                rect3a.setAttribute('height','194')
+            }, 2500);
+            setTimeout(() => {
+                rect1.setAttribute('height','3.9')
+            }, 500);
+            setTimeout(() => {
+                rect2.setAttribute('height','130.9')
+            }, 2000);
             $('.p1 .price').each(function () {
                 $(this).prop('Counter',0).animate({
                     Counter: $(this).text()
                 }, {
-                    duration: 3000,
+                    duration: 2500,
                     easing: 'swing',
                     step: function (now) {
                         $(this).text(Math.ceil(now));
@@ -101,7 +122,7 @@
                 $(this).prop('Counter',0).animate({
                     Counter: $(this).text()
                 }, {
-                    duration: 1500,
+                    duration: 2000,
                     easing: 'swing',
                     step: function (now) {
                         $(this).text(Math.ceil(now));
@@ -125,4 +146,114 @@
             })
         }
     }
+     
+    var putility = document.querySelector('svg#menu path#utility')
+    var pgame = document.querySelector('svg#menu path#game')
+    var part = document.querySelector('svg#menu path#art')
+    var psport = document.querySelector('svg#menu path#sport')
+    var pmetaverse = document.querySelector('svg#menu path#metaverse')
+    var pcollectible = document.querySelector('svg#menu path#collectible')
+    var partutility = document.querySelector('svg#UTILITY')
+    var partgame = document.querySelector('svg#GAME')
+    var partart = document.querySelector('svg#ART')
+    var partsport = document.querySelector('svg#SPORTS')
+    var partmeta = document.querySelector('svg#METAVERSE')
+    var partcollectibles = document.querySelector('svg#COLLECTIBLES')
+    
+    if (
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPod/i)
+    ) {
+    // iPhone double-click polyfill
+    $(pcollectible).on("touchstart", function (e) {
+        if($(".pie").find('.mobilanim')){
+            el = $(".pie").find('.mobilanim')
+            $(el).removeClass('mobilanim')
+        }
+        $(partcollectibles).addClass('mobilanim')
+    });
+    $(pmetaverse).on("touchstart", function (e) {
+        if($(".pie").find('.mobilanim')){
+            el = $(".pie").find('.mobilanim')
+            $(el).removeClass('mobilanim')
+        }
+        $(partmeta).addClass('mobilanim')
+    });
+    $(psport).on("touchstart", function (e) {
+        partsport.style.opacity = 1
+        partsport.style.zIndex = 2
+        partsport.style.transitionDuration = "1s"
+    });    
+    $(part).on("touchstart", function (e) {
+        partart.style.opacity = 1
+        partart.style.zIndex = 2
+        partart.style.transitionDuration = "1s"
+    });   
+    $(pgame).on("touchstart", function (e) {
+        partgame.style.opacity = 1
+        partgame.style.zIndex = 2
+        partgame.style.transitionDuration = "1s"
+    });   
+    $(putility).on("touchstart", function (e) {
+        partutility.style.opacity = 1
+        partutility.style.zIndex = 2
+        partutility.style.transitionDuration = "1s"
+    });   
+    }
+
+
+    pcollectible.addEventListener("mouseenter", function(event){
+        partcollectibles.style.opacity = 1
+        partcollectibles.style.zIndex = 2
+        partcollectibles.style.transitionDuration = "1s"
+    })
+    pcollectible.addEventListener("mouseleave", function(event){
+        partcollectibles.style.opacity = 0
+        partcollectibles.style.zIndex = 0
+    })
+    pmetaverse.addEventListener("mouseenter", function(event){
+        partmeta.style.opacity = 1
+        partmeta.style.zIndex = 2
+        partmeta.style.transitionDuration = "1s"
+    })
+    pmetaverse.addEventListener("mouseleave", function(event){
+        partmeta.style.opacity = 0
+        partmeta.style.zIndex = 0
+    })
+    psport.addEventListener("mouseenter", function(event){
+        partsport.style.opacity = 1
+        partsport.style.zIndex = 2
+        partsport.style.transitionDuration = "1s"
+    })
+    psport.addEventListener("mouseleave", function(event){
+        partsport.style.opacity = 0
+        partsport.style.zIndex = 0
+    })
+    part.addEventListener("mouseenter", function(event){
+        partart.style.opacity = 1
+        partart.style.zIndex = 2
+        partart.style.transitionDuration = "1s"
+    })
+    part.addEventListener("mouseleave", function(event){
+        partart.style.opacity = 0
+        partart.style.zIndex = 0
+    })
+    pgame.addEventListener("mouseenter", function(event){
+        partgame.style.opacity = 1
+        partgame.style.zIndex = 2
+        partgame.style.transitionDuration = "1s"
+    })
+    pgame.addEventListener("mouseleave", function(event){
+        partgame.style.opacity = 0
+        partgame.style.zIndex = 0
+    })
+    putility.addEventListener("mouseenter", function(event){
+        partutility.style.opacity = 1
+        partutility.style.zIndex = 2
+        partutility.style.transitionDuration = "1s"
+    })
+    putility.addEventListener("mouseleave", function(event){
+        partutility.style.opacity = 0
+        partutility.style.zIndex = 0
+    })
 </script>

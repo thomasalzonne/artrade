@@ -31,63 +31,220 @@ div#linebg {
 }
 .event1 .eventdesc {
     width: 75%;
+    margin-left: auto;
+    margin-right: -70%;
+    margin-top: -40px;
 }
 .event.event2 {
     grid-column: 1/span 3 !important;
-    margin-top: 60px;
-    margin-left: -10px;
+    margin-top: 140px;
 }
-.event2 .eventdesc{
-    width: 90%;
+.event2 .eventtitle {
+    width: 50%;
+    margin-bottom: 20px;
+}
+.event2 .eventdesc {
+    width: 65%;
 }
 .event.event3 {
     grid-column: 5/span 4 !important;
-    margin-top: -90px;
+    margin-top: -65px;
+    margin-left: -20px;
+}
+.event3 .eventtitle {
+    width: 60%;
+    margin-bottom: 20px;
 }
 .event3 .eventdesc {
-    width: 80%;
+    width: 60%;
 }
 .event.event4 {
     grid-column: 8/span 3 !important;
-    margin-top: -40px;
+    margin-top: 20px;
     margin-left: 20px;
+}
+.event4 .eventtitle {
+    width: fit-content;
+    margin: auto;
+}
+.event4 .eventdesc {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
 }
 .event.event5 {
     grid-row: 4 !important;
     grid-column: 1/span 4 !important;
-    margin-top: 30px;
+    margin-top: 110px;
 }
 .event5 .eventdesc {
-    width: 80%;
+    width: 70%;
+    margin-top: 20px;
 }
 .event.event6 {
     grid-row: 6;
     grid-column: 3/span 4 !important;
-    margin-top: 120px;
-    margin-left: -10px;
+    margin-top: 200px;
+    margin-left: 10px;
 }
 .event6 .eventdesc {
-    width: 80%;
+    width: 50%;
 }
 .event.event7 {
     grid-row: 6 !important;
     grid-column: 8/span 3 !important;
-    margin-top: 90px;
+    margin-top: 160px;
+}
+.event7 .eventdesc {
+    width: 70%;
+    margin-top: 20px;
 }
 .event.event8 {
     grid-row: 8;
     grid-column: 6/span 3 !important;
-    margin-top: 80px;
-    margin-left: -30px;
+    margin-top: 200px;
+    margin-left: 20px;
+}
+.event8 .eventdesc {
+    margin-top: 20px;
 }
 .event.event9 {
     grid-row: 9;
     grid-column: 4/span 5 !important;
-    margin-top: 150px;
+    margin-top: 250px;
+    margin-left: 70px;
 }
 .event9 .eventdesc {
     width: 90%;
+    margin-top: 20px;
 }
 section.roadmapC {
     margin-bottom: 150px;
+}
+#line{
+    transition-duration: 2s;
+}
+.event1 .eventtitle{
+    margin-top: 40px;
+}
+@media screen and (max-width: 1370px) {
+    .event.event1 {
+        margin-left: 30px;
+        margin-right: -30px;
+    }
+    .event.event3 {
+        margin-top: -95px;
+        margin-left: 0px;
+        margin-right: -20px;
+    }
+    .event.event4 {
+        margin-left: 60px;
+        margin-right: -50px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .event.event1 {
+        margin-left: 90px;
+        margin-right: -90px;
+    }
+    .event.event3 {
+        margin-top: -95px;
+        margin-right: -60px;
+        margin-left: 20px;
+    }
+    .event.event4 {
+        margin-left: 90px;
+        margin-right: -110px;
+    }
+    .event.event6 {
+        margin-left: 30px;
+        margin-right: -60px;
+    }
+    .event.event7 {
+        margin-left: 50px;
+        margin-right: -70px;
+    }
+    .event.event8 {
+        margin-top: 170px;
+        margin-left: 70px;
+        margin-right: -40px;
+    }
+    .event.event9 {
+        margin-left: 100px;
+        margin-right: -60px;
+    }
+}
+@media screen and (max-width: 1040px) {
+    div#linebg{
+        grid-column: 1/Span 12;
+    }
+    svg.svgmashvp {
+        width: 100%;
+    }
+    .event.event1 {
+        margin-left: 50px;
+        margin-right: -50px;
+        margin-top: 20px;
+    }
+    .event.event2 {
+        margin-left: -80px;
+        margin-top: 50px;
+    }
+    .event.event3 {
+        margin-left: -40px;
+    }
+    .event3 .eventdesc {
+        width: 80%;
+    }
+    .event.event4 {
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .event.event5 {
+        margin-top: 90px;
+        margin-left: -80px;
+    }
+    .event.event6 {
+        margin-top: 140px;
+        margin-left: -40px;
+    }
+    .event.event7 {
+        margin-top: 90px;
+        margin-left: 10px;
+        margin-right: -80px;
+    }
+    .event.event8 {
+        margin-top: 130px;
+        margin-left: -20px;
+    }
+    .event.event9 {
+        margin-top: 200px;
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width:800px) {
+    div#linebg{
+        display: none;
+    }
+}
+@media screen and (max-width: 450px) {
+    .roadmap.grid12.ma.wi90 {
+        display: flex;
+        flex-direction: column;
+    }
+    .events.grid10 {
+        display: flex;
+        flex-direction: column;
+    }
+    .events .event {
+        margin: 0;
+    }
+    .events .event .eventtitle {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .events .event .eventdesc {
+        margin: 0;
+        width: 90%;
+    }
 }

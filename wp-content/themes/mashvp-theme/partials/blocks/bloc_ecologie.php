@@ -4,7 +4,7 @@
         <?php if(have_rows('image_texte')): ?>
             <?php while(have_rows('image_texte')): the_row() ?>
                 <div class="it grid12">
-                    <div class="ecoimgit" style="background-image: url('<?= get_sub_field('image') ?>')"></div>
+                    <div class="ecoimgit rellax" data-rellax-speed="-1" data-rellax-mobile-speed="0" data-rellax-tablet-speed="0" data-rellax-desktop-speed="-1" style="background-image: url('<?= get_sub_field('image') ?>')"></div>
                     <?php if(have_rows('texte')): ?>
                         <?php while(have_rows('texte')): the_row() ?>
                             <div class="ecotxtit">
@@ -27,7 +27,7 @@
                             </div>
                         <?php endwhile; ?>
                     <?php endif; ?>
-                    <div class="ecoimgti" style="background-image: url('<?= get_sub_field('image') ?>')"></div>
+                    <div class="ecoimgti rellax" data-rellax-speed="-3" data-rellax-mobile-speed="0" data-rellax-tablet-speed="0" data-rellax-desktop-speed="-3" style="background-image: url('<?= get_sub_field('image') ?>')"></div>
                 </div>
             <?php endwhile; ?>
         <?php endif; ?>

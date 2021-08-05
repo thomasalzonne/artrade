@@ -26,10 +26,23 @@
     margin-bottom: 40px;
 }
 .consciousC{
-    margin-bottom: 140px;
+    margin-bottom: 340px;
 }
-.consciousC:hover .consciousimg{
-    transform: rotateY(360deg);
+.consciousimg.rellax {
+    margin-top: -1080px;
+}
+@media screen and (max-width: 1300px) {
+    .consciousimg.rellax {
+        margin-top: -1450px;
+    }
+}
+@media screen and (max-width: 1040px) {
+    .consciousimg.rellax {
+        margin-top: unset;
+    }
+    .consciousC {
+        margin-bottom: 140px;
+    }
 }
 @media screen and (max-width: 800px){
     .conscious.grid12.ma.wi90 {
@@ -41,6 +54,9 @@
     }
 }
 @media screen and (max-width: 450px){
+    .consciousimg.rellax{
+        height: 337px;
+    }
     .conscioustxt.tk-objektiv-mk1.purple{
         width: 100%;
     }

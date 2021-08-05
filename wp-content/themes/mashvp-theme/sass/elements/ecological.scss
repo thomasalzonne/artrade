@@ -1,6 +1,6 @@
 .ecotitle.sectiontitle.purple.tk-bely-display {
     grid-row: 1;
-    grid-column: 1/span 6;
+    grid-column: 1/span 4;
 }
 .ecoimgit {
     grid-column: 1/span 8;
@@ -8,15 +8,16 @@
     background-position: center;
     background-size: cover;
     grid-row: 1;
+    transition-duration: 1s;
 }
 .ecotxtit {
     grid-column: 8/span 4;
     grid-row: 1;
-    width: 80%;
+    width: 70%;
     margin-left: auto;
 }
 .ecotxtti {
-    grid-column: 2/span 4;
+    grid-column: 2/span 3;
     grid-row: 1;
 }
 .ecoimgti {
@@ -24,11 +25,21 @@
     background-position: center;
     background-size: cover;
     grid-row: 1;
+    transition-duration: 1s;
+    min-height: 500px;
 }
 .it.grid12 {
     grid-row: 2;
     grid-column: span 12;
     margin-top: -120px;
+    margin-bottom: 300px;
+}
+.ecoimgit.rellax {
+    margin-top: -300px;
+}
+.ecoimgti.rellax {
+    height: 850px;
+    margin-top: -1000px;
 }
 .ti.grid12 {
     grid-row: 3;
@@ -49,6 +60,19 @@ section.ecologieC {
 .ecotxttititle.sectionsubtitle.green.tk-objektiv-mk1 {
     margin-bottom: 50px;
 }
+@media screen and (max-width: 1300px) {
+    .ecoimgti.rellax{
+        margin-top: -1100px;
+    }
+}
+@media screen and (max-width: 1040px) {
+    .ecoimgit.rellax, .ecoimgti.rellax{
+        margin-top: unset;
+    }
+    .it.grid12{
+        margin-bottom: unset;
+    }
+}
 @media screen and (max-width: 800px){
     .ecologie.grid12.ma.wi90 {
         display: flex;
@@ -56,21 +80,29 @@ section.ecologieC {
     }
     .it.grid12{
         margin-top: 0;
-    }
-}
-@media screen and (max-width: 450px){
-    .it.grid12{
         display: flex;
         flex-direction: column;
-    }
-    .ecotxtit{
-        margin-left: unset;
     }
     .ti.grid12 {
         display: flex;
         flex-direction: column-reverse;
     }
+    .ecoimgti.rellax{
+        aspect-ratio: 640/640;
+        height: unset;
+    }
+}
+@media screen and (max-width: 450px){
+    .ecotxtit{
+        margin-left: unset;
+    }
     .ecoimgti {
         aspect-ratio: 640/640;
+    }
+    .ecoimgti.rellax{
+        min-height: unset;
+    }
+    .ecoimgit.rellax, .ecoimgti.rellax {
+        height: 337px;
     }
 }

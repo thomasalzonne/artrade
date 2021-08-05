@@ -1,4 +1,134 @@
 .sectiontitle.tk-bely-display.purple.talktitle {
     grid-column: 1/span 5;
 }
-  
+section#talkC {
+    margin-bottom: 250px;
+}
+.c1, .c2, .c3 {
+    background-position: center;
+    background-size: cover;
+}
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    grid-column: 6/span 6;
+    grid-row: 2;
+}
+.talksource {
+    grid-row: 2;
+    grid-column: 4/span 2;
+    height: fit-content;
+    margin-top: auto;
+    position: relative;
+}
+#app > span.prev {
+    padding: 70px;  
+}
+#app > span {
+    padding: 30px;
+}
+
+#app > span:hover {
+    cursor: pointer;
+}
+.container {
+    width: 480px;
+    height: 480px;
+    flex-shrink: 0;
+}
+.container div{
+    height:437px;
+    width:437px;
+    position: absolute;
+    z-index:9;
+    transition:all 500ms ease;
+}
+    #app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  grid-column: 6/span 6
+    }
+    #app > span.prev {
+    padding: 70px;
+  }
+    #app > span {
+    padding: 30px;
+    }
+
+    #app > span:hover {
+    cursor: pointer;
+    }
+    .container {
+      width: 480px;
+      height: 480px;
+      flex-shrink: 0;
+    }
+    .container div{
+    height:437px;
+    width:437px;
+    position: absolute;
+    z-index:9;
+    transition:all 500ms ease;
+    }
+  .sourceactive{
+      transform: translateX(0);
+      z-index: 10 !important;
+  }
+  .sourceprev{
+      transform: translate3d(-40px, 40px, 0px);
+      z-index: 9;
+  }
+  .sourcenext{
+      transform: translate3d(40px, -40px, 0px);
+      z-index: 9;
+  }
+  .talksource .source {
+    position: absolute;
+    bottom: 0;
+}
+@media screen and (max-width: 1300px) {
+    #app{
+        grid-column: 4/span 6;
+    }
+    .talksource {
+        grid-column: 2/span 2;
+    }
+}
+@media screen and (max-width: 800px) {
+    .talksource {
+        grid-row: 3;
+    }
+}
+@media screen and (max-width: 450px) {
+    div#app {
+        flex-direction: column;
+        position: relative;
+    }
+    .container {
+        width: 300px;
+        height: 300px;
+    }
+    .container div {
+        height: 300px;
+        width: 300px;
+    }
+    .talk.grid12.ma.wi90 {
+        display: flex;
+        flex-direction: column;
+    }
+    span.next {
+        position: absolute;
+        bottom: -150px;
+        right: 0;
+    }
+    #app > span.prev {
+        position: absolute;
+        bottom: -150px;
+        left: 0;
+        padding: 30px;
+    }
+}

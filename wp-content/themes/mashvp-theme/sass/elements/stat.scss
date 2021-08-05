@@ -3,7 +3,11 @@
     initial-value: 0;
     inherits: false;
   }
-  
+  .mobilanim{
+      opacity: 1 !important;
+      z-index: 2;
+      transition-duration: 1s;
+  }
   .animatenumber {
     animation: counter 5s infinite alternate ease-in-out;
     counter-reset: num var(--num);
@@ -22,45 +26,133 @@
       --num: 15289191;
     }
   }
-  
+  svg#Calque_1first path.st7 {
+    fill: #8B50E7;
+}
+svg#Calque_1seventh {
+    position: absolute;
+    transform: scale(1.9);
+    margin-left: 32px;
+    margin-right: -32px;
+    margin-top: 49px;
+    opacity: 0;
+}
+svg#Calque_1first path.st1 {
+    fill: #A2EFAC;
+}
+svg#Calque_1first {
+    z-index: 1;
+}
+svg#Calque_1first path {
+    pointer-events:all;
+}
+svg#Calque_1fiveth,svg#Calque_1seventh,svg#Calque_1sixth,svg#Calque_1sec, svg#Calque_1third, svg#Calque_1fourth{
+    pointer-events: none;
+}
+svg#Calque_1sec path.st6 {
+    fill: #FFFFFF;
+}
 .sectiontitle.tk-bely-display.purple.stattitle {
-    grid-column: 1/span 5;
+    grid-column: 1/span 4;
     grid-row: 1;
 }
 .graph {
     grid-row: 1;
-    grid-column: 2/span 6;
+    grid-column: 3/span 6;
     position: relative;
 }
 .p1 {
     position: absolute;
-    top: 470px;
+    bottom: 50px;
     font-size: 19px;
-    right: -65px;
+    right: 55px;
     font-weight: bold;
 }
 .p2.green.tk-objektiv-mk1 {
     position: absolute;
-    top: 470px;
+    bottom: 50px;
     font-size: 19px;
     font-weight: bold;
-    right: 105px;
+    left: 250px;
 }
 .p3.green.tk-objektiv-mk1 {
     position: absolute;
-    top: 470px;
+    bottom: 50px;
     font-size: 19px;
     font-weight: bold;
-    left: 80px;
+    left: 65px;
+}
+.graph svg#Calque_1 rect.st1.rect3 {
+    fill: #8F4FF0;
+}
+.graph svg#Calque_1 rect.st1.rect1 {
+    fill: #8F4FF0;
+}
+svg#menu {
+    position: absolute;
+    transform: scale(2.5);
+}
+svg#ART {
+    position: absolute;
+    transform: scale(2.5);
+    font-family: "bely-display", sans-serif;
+    margin-left: -87px;
+    margin-top: 0px;
+    opacity: 0;
+    pointer-events: none;
+}
+svg#GAME {
+    position: absolute;
+    transform: scale(2.5);
+    font-family: "bely-display", sans-serif;
+    margin-top: -75px;
+    opacity: 0;
+    pointer-events: none;
+}
+svg#UTILITY {
+    position: absolute;
+    transform: scale(2.5);
+    font-family: "bely-display", sans-serif;
+    margin-top: -75px;
+    opacity: 0;
+    pointer-events: none;
+}
+svg#COLLECTIBLES {
+    position: absolute;
+    transform: scale(2.5);
+    font-family: "bely-display", sans-serif;
+    margin-left: 64px;
+    margin-top: 2px;
+    opacity: 0;
+    pointer-events: none;
+}
+svg#SPORTS {
+    position: absolute;
+    transform: scale(2.5);
+    font-family: "bely-display", sans-serif;
+    margin-top: 34px;
+    opacity: 0;
+    pointer-events: none;
+}
+svg#METAVERSE {
+    position: absolute;
+    transform: scale(2.5);
+    font-family: "bely-display", sans-serif;
+    margin-top: 35px;
+    opacity: 0;
+    pointer-events: none;
 }
 .textquarter {
     grid-column: 9/span 3;
     line-height: 32px;
+    width: 80%;
+    margin: auto;
+    margin-top: 0;
 }
 .txtbely {
     font-size: 21px;
 }
-.graph svg#Calque_1 {
+.graph svg#Calque_1{
     aspect-ratio: 467/430;
     width: 630px;
 }
@@ -70,56 +162,77 @@
     margin-top: 100px;
     min-height: 480px;
 }
-.collec{
+.collec {
     grid-column: 1/span 5;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.sectionsubtitle.green.tk-objektiv-mk1 {
+    width: 80%;
 }
 .pie {
     position: relative;
-    grid-column: 6/span 6;
+    grid-column: 8;
+    margin-top: 140px;
 }
-svg#Calque_1\ sec,svg#Calque_1\ third, svg#Calque_1\ fourth{
+svg#Calque_1sec,svg#Calque_1third, svg#Calque_1fourth{
     opacity: 0;
 }
-svg#Calque_1\ first path.st6 {
+svg#Calque_1first path.st6 {
     fill: #FFFFFF;
 }
-svg#Calque_1\ first, svg#Calque_1\ sec,svg#Calque_1\ third, svg#Calque_1\ fourth {
+svg#Calque_1first, svg#Calque_1sec,svg#Calque_1third, svg#Calque_1fourth {
     position: absolute;
     transform: scale(1.9);
 }
-svg#Calque_1\ fiveth {
+svg#Calque_1fiveth {
     position: absolute;
     transform: scale(1.9);
-    margin-right: -110px;
-    margin-left: 110px;
+    margin-right: -95px;
+    margin-left: 95px;
     opacity: 0;
 }
-svg#Calque_1\ sixth {
+svg#Calque_1sixth {
     position: absolute;
     transform: scale(1.9);
-    top: 57px;
-    margin-left: 40px;
+    top: 50px;
+    margin-left: 32px;
     margin-right: -30px;
     opacity: 0;
 }
 .collec svg#Calque_1 {
     transform: scale(1.23);
     margin-top: -50px;
+    width: 80%;
+    margin-left: auto;
+}
+.collec svg#Calque_1 .st0{
+    fill: #8F4FEB;
+}
+.stat.grid12.ma.wi90 {
+    margin-bottom: 200px;
 }
 .quote {
     grid-row: 2;
     grid-column: span 12;
     font-size: 9px;
-    margin-top: -30px;
+    margin-top: 80px;
 }
-.stat.grid12.ma.wi90 {
-    overflow: hidden;
+// .stat.grid12.ma.wi90 {
+//     overflow: hidden;
+// }
+svg#Calque_1fiveth path.st6 {
+    fill: #FFFFFF;
 }
-.st0 {
-    fill: #8F4FEB !important;
+text.cls-10 {
+    font-family: 'bely-display';
 }
-.st1 {
-    fill: #44E559 !important;
+text.cls-7 {
+    font-family: 'objektiv-mk1';
+}
+g.none {
+    display: none;
 }
 .boomtxt {
     grid-column: 8/span 4;
@@ -160,11 +273,21 @@ svg#Calque_1\ sixth {
     z-index: 1;
     margin-top: 104px;
 }
-.boomgallery .img {
+.img img {
     aspect-ratio: 303/400;
-    background-position: center;
-    background-size: cover;
-    height: calc((400/303) * 50%);
+    height: calc((400/303) * 70%);
+    object-fit: cover;
+}
+.img canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+.img{
+    position: relative;
+    height: 525px;
+    width: 400px;
 }
 .boomsource.purple.tk-objektiv-mk1 {
     grid-row: 2;
@@ -173,7 +296,12 @@ svg#Calque_1\ sixth {
     line-height: 20px;
     margin-top: -135px;
 }
-
+.graph svg#Calque_1 rect.st0 {
+    fill: #8F4FEB;
+}
+.graph svg#Calque_1 rect.st1 {
+    fill: #44E559;
+}
 g.animatenumber{
     animation: counter 5s alternate ease-in-out;
 }
@@ -188,17 +316,88 @@ g.animatenumber::after {
       --num: 15289191;
     }
   }
+@media screen and (max-width: 1300px) {
+    .boomgallery{
+        grid-column: 1/span 6;
+    }
+    .boomsource.purple.tk-objektiv-mk1{
+        grid-row: 3;
+    }
+    .graph svg#Calque_1 .st2 {
+        fill: #44E559;
+    }
+    .p1{
+        right: -15px;
+    }
+}
+@media screen and (max-width: 1040px) {
+    .sectiontitle.tk-bely-display.purple.stattitle{
+        z-index: 1;
+    }
+    .graph{
+        grid-column: 1/span 6;
+    }
+    .p1{
+        right: -130px;
+    }
+    .textquarter{
+        width: 90%;
+    }
+    .collec svg#Calque_1{
+        margin-left: unset;
+    }
+    .pie{
+        grid-column: 7;
+        margin-top: 100px;
+    }
+    .it.grid12 .ecotxtit{
+        width: 100%;
+    }
+    .sectionsubtitle.green.tk-objektiv-mk1 {
+        width: 90%;
+    }
+    section#ecologieC .ecotitle.sectiontitle.purple.tk-bely-display {
+        grid-column: 1/span 6;
+    }
+}
 @media screen and (max-width: 800px){
+    .boomgallery{
+        grid-row-gap: 0;
+        order: 2;
+    }
+    .boomtxt {
+        order: 1;
+    }
+    .boomsource.purple.tk-objektiv-mk1 {
+        order: 3;
+        margin-top: 0;
+    }
+    .p1 {
+        right: 125px;
+    }
     .stat.grid12.ma.wi90 {
         display: flex;
         flex-direction: column;
     }
     .boom.grid12.ma.wi90 {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 450px){
+    .boomtxt{
+        margin-bottom: 70px;
+    }
+    .collec{
+        width: 100%;
+    }
+    .sectionsubtitle.green.tk-objektiv-mk1{
+        width: 80%;
+    }
+    .pie {
+        height: 365px;
+        margin-left: 110px;
+    }
     .graph svg#Calque_1{
         width: 100%;
     }
@@ -208,5 +407,51 @@ g.animatenumber::after {
     }
     .quote.purple {
         margin-top: 10px;
+    }
+    .p3.green.tk-objektiv-mk1 {
+        bottom: 30px;
+        font-size: 14px;
+        left: 30px;
+    }
+    .p2.green.tk-objektiv-mk1 {
+        bottom: 30px;
+        font-size: 14px;
+        left: 145px;
+    }
+    .p1.green.tk-objektiv-mk1{
+        position: absolute;
+        bottom: 30px;
+        font-size: 14px;
+        right: 30px;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 375px) {
+    .p1.green.tk-objektiv-mk1 {
+        right: 18px;
+    }
+    .p2.green.tk-objektiv-mk1 {
+        left: 125px;
+    }
+    .pie svg {
+        transform: scale(1) !important;
+    }
+    .pie {
+        height: 146px;
+        width: 146px;
+        margin: auto;
+        margin-bottom: 70px;
+    }
+    svg#ART{
+        margin-left: -50px;
+    }
+    svg#COLLECTIBLES{
+        margin-left: 0px;
+    }
+    svg#GAME, svg#UTILITY {
+        margin-top: -43px;
+    }
+    svg#SPORTS, svg#METAVERSE{
+        margin-top: 0;
     }
 }
