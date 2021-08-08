@@ -43,6 +43,7 @@
 .pdp {
     aspect-ratio: 235/314;
     height: 314px;
+    width: 235px;
     background-position: center;
     background-size: cover;
     margin-right: 20px;
@@ -93,5 +94,12 @@
 @media screen and (max-width: 450px){
     .pdp {
         width: 190px;
+    }
+    .poste, .facedesc {
+        font-size: 14px;
+    }
+    .firstname, .lastname {
+        font-size: 20px;
+        line-height: 25px;
     }
 }

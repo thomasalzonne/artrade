@@ -5,7 +5,6 @@
 <script>
     const app = new WaveEffect('.img');
     app.init();
-    app.destroy();
 
     var rellax = new Rellax('.rellax', {
     breakpoints:[350, 800, 1201]
@@ -43,6 +42,37 @@
     var navbuy = $('.buytok')
     var anavbuy = $(navbuy).find('a')
     $(anavbuy).html('buy token <span class="iconheader" style="background-image: url(wp-content/themes/mashvp-theme/assets/img/panierhf.svg)"></span>')
+
+    function checkVisible(elm) {
+        if(elm){
+            var rect = elm.getBoundingClientRect();
+            var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+            return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+        }
+    }
+    var sections = document.querySelectorAll('section')
+    var sectionsoffset = []; 
+    Array.from(sections).map(el => {
+            sectionsoffset.push(el.offsetTop)
+        })
+    sectionsoffset.push(20000)
+    activesection()
+    window.addEventListener("scroll", activesection);
+    function activesection(){
+        var scroll = window.scrollY
+        for (let i = 0; i < sectionsoffset.length; i++) {
+            if(scroll < sectionsoffset[i]){
+                if(sections[i-2]){
+                    $(nav).find("[href='#" + sections[i-2].id + "']").css('background-color','#8850E4')
+                }
+                if(sections[i]){
+                    $(nav).find("[href='#" + sections[i].id + "']").css('background-color','#8850E4')
+                }
+                $(nav).find("[href='#" + sections[i-1].id + "']").css('background-color','#44DF59')
+                break;
+            }
+        }
+    }
 </script>
 <footer class="row">
 </footer>

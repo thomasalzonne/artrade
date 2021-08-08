@@ -130,7 +130,7 @@ svg#SPORTS {
     position: absolute;
     transform: scale(2.5);
     font-family: "bely-display", sans-serif;
-    margin-top: 34px;
+    margin-top: 36px;
     opacity: 0;
     pointer-events: none;
 }
@@ -169,7 +169,7 @@ svg#METAVERSE {
     flex-direction: column;
 }
 .sectionsubtitle.green.tk-objektiv-mk1 {
-    width: 80%;
+    width: 100%;
 }
 .pie {
     position: relative;
@@ -235,14 +235,14 @@ g.none {
     display: none;
 }
 .boomtxt {
-    grid-column: 8/span 4;
+    grid-column: 9/span 3;
 }
 .boom.grid12.ma.wi90 {
     margin-top: 100px;
     margin-bottom: 130px;
 }
 .boomtitle.sectionsubtitle.green.tk-objektiv-mk1 {
-    width: 80%;
+    width: 90%;
     line-height: 36px;
     margin-bottom: 30px;
 }
@@ -250,7 +250,7 @@ g.none {
     line-height: 32px;
 }
 .boomgallery {
-    grid-column: 2/span 6;
+    grid-column: 1/span 7;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 3em;
@@ -266,12 +266,14 @@ g.none {
     grid-column: 2/span 4;
     z-index: 5;
     margin-top: 52px;
+    margin-left: 60px;
 }
 .img.img3 {
     grid-row: 1;
     grid-column: 3/span 4;
     z-index: 1;
     margin-top: 104px;
+    margin-left: 110px;
 }
 .img img {
     aspect-ratio: 303/400;
@@ -286,15 +288,15 @@ g.none {
   }
 .img{
     position: relative;
-    height: 525px;
-    width: 400px;
+    height: 526px;
+    width: 398px;
 }
 .boomsource.purple.tk-objektiv-mk1 {
     grid-row: 2;
     grid-column: span 6;
     font-size: 9px;
     line-height: 20px;
-    margin-top: -135px;
+    margin-top: -60px;
 }
 .graph svg#Calque_1 rect.st0 {
     fill: #8F4FEB;
@@ -316,6 +318,9 @@ g.animatenumber::after {
       --num: 15289191;
     }
   }
+  .graph path.st2 {
+    fill: #44E559;
+}
 @media screen and (max-width: 1300px) {
     .boomgallery{
         grid-column: 1/span 6;
@@ -330,7 +335,15 @@ g.animatenumber::after {
         right: -15px;
     }
 }
+@media screen and (max-width: 1280px) {
+    .p1,.p2.green.tk-objektiv-mk1,.p3.green.tk-objektiv-mk1{
+        bottom: 120px;
+    }
+}
 @media screen and (max-width: 1040px) {
+    .collec{
+        grid-column: 1/span 6;
+    }
     .sectiontitle.tk-bely-display.purple.stattitle{
         z-index: 1;
     }
@@ -385,6 +398,12 @@ g.animatenumber::after {
     }
 }
 @media screen and (max-width: 450px){
+    .stat.grid12.ma.wi90{
+        margin-bottom: 50px;
+    }
+    .img.img2,.img.img3{
+        margin-left: 0;
+    }
     .boomtxt{
         margin-bottom: 70px;
     }
@@ -425,16 +444,9 @@ g.animatenumber::after {
         right: 30px;
         font-weight: bold;
     }
-}
-@media screen and (max-width: 375px) {
-    .p1.green.tk-objektiv-mk1 {
-        right: 18px;
-    }
-    .p2.green.tk-objektiv-mk1 {
-        left: 125px;
-    }
     .pie svg {
         transform: scale(1) !important;
+        animation-duration: 1s;
     }
     .pie {
         height: 146px;
@@ -453,5 +465,19 @@ g.animatenumber::after {
     }
     svg#SPORTS, svg#METAVERSE{
         margin-top: 0;
+    }
+}
+@media screen and (max-width: 375px) {
+    .p1.green.tk-objektiv-mk1 {
+        right: 20px;
+        bottom: 25px;
+    }
+    .p2.green.tk-objektiv-mk1 {
+        left: 115px;
+        bottom: 25px;
+    }
+    .p3.green.tk-objektiv-mk1{
+        left: 20px;
+        bottom: 25px;
     }
 }

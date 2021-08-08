@@ -132,3 +132,13 @@ section#talkC {
         padding: 30px;
     }
 }
+@media screen and (max-width: 380px){
+    .container {
+        width: 250px;
+        height: 250px;
+    }
+    .container div {
+        height: 250px;
+        width: 250px;
+    }
+}

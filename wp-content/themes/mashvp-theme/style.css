@@ -131,7 +131,6 @@ body {
   min-height: 100vh;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
   color: #0f0f10;
   background-color: #ffffff;
   overflow-x: hidden;
@@ -162,6 +161,10 @@ body main {
   color: #660000;
   background-color: #ffcccc;
   border: 4px dashed #ff9999;
+}
+
+main {
+  line-height: 32px;
 }
 
 .green {
@@ -210,6 +213,12 @@ body main {
   grid-row-gap: 0em;
 }
 
+@media screen and (max-width: 480px) {
+  .sectiontitle {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
 .navbar {
   grid-column: span 12;
   margin-top: 50px;
@@ -252,6 +261,7 @@ span.iconheader {
 .headertitle.title {
   grid-column: 1/span 9;
   font-weight: bold;
+  width: 90%;
 }
 
 .ico {
@@ -309,7 +319,7 @@ svg#Calque_1 path.st0 {
 
 .navigation {
   position: fixed;
-  right: 5%;
+  right: 2%;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -324,18 +334,26 @@ a.navigationlink {
 }
 
 .buytoken {
-  grid-column: 8/span 2;
+  grid-column: 9/span 2;
   background-color: #44E559;
   height: 43px;
   border-radius: 16px;
   display: flex;
   justify-content: center;
   line-height: 43px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  margin-top: -10px;
 }
 
 span.buyicon {
   margin-left: 10px;
   margin-top: 3px;
+}
+
+.headervideo video {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 1300px) {
@@ -353,6 +371,10 @@ span.buyicon {
   }
 }
 @media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+
   .headertitle.title {
     grid-column: 1/span 12;
   }
@@ -372,6 +394,11 @@ span.buyicon {
   }
 }
 @media screen and (max-width: 450px) {
+  .headervideo {
+    height: fit-content;
+    background-color: unset;
+  }
+
   .header.grid12.wi90.ma {
     display: flex;
     flex-direction: column;
@@ -539,7 +566,7 @@ svg#SPORTS {
   position: absolute;
   transform: scale(2.5);
   font-family: "bely-display", sans-serif;
-  margin-top: 34px;
+  margin-top: 36px;
   opacity: 0;
   pointer-events: none;
 }
@@ -585,7 +612,7 @@ svg#METAVERSE {
 }
 
 .sectionsubtitle.green.tk-objektiv-mk1 {
-  width: 80%;
+  width: 100%;
 }
 
 .pie {
@@ -663,7 +690,7 @@ g.none {
 }
 
 .boomtxt {
-  grid-column: 8/span 4;
+  grid-column: 9/span 3;
 }
 
 .boom.grid12.ma.wi90 {
@@ -672,7 +699,7 @@ g.none {
 }
 
 .boomtitle.sectionsubtitle.green.tk-objektiv-mk1 {
-  width: 80%;
+  width: 90%;
   line-height: 36px;
   margin-bottom: 30px;
 }
@@ -682,7 +709,7 @@ g.none {
 }
 
 .boomgallery {
-  grid-column: 2/span 6;
+  grid-column: 1/span 7;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 3em;
@@ -700,6 +727,7 @@ g.none {
   grid-column: 2/span 4;
   z-index: 5;
   margin-top: 52px;
+  margin-left: 60px;
 }
 
 .img.img3 {
@@ -707,6 +735,7 @@ g.none {
   grid-column: 3/span 4;
   z-index: 1;
   margin-top: 104px;
+  margin-left: 110px;
 }
 
 .img img {
@@ -724,8 +753,8 @@ g.none {
 
 .img {
   position: relative;
-  height: 525px;
-  width: 400px;
+  height: 526px;
+  width: 398px;
 }
 
 .boomsource.purple.tk-objektiv-mk1 {
@@ -733,7 +762,7 @@ g.none {
   grid-column: span 6;
   font-size: 9px;
   line-height: 20px;
-  margin-top: -135px;
+  margin-top: -60px;
 }
 
 .graph svg#Calque_1 rect.st0 {
@@ -760,6 +789,10 @@ g.animatenumber::after {
     --num: 15289191;
   }
 }
+.graph path.st2 {
+  fill: #44E559;
+}
+
 @media screen and (max-width: 1300px) {
   .boomgallery {
     grid-column: 1/span 6;
@@ -777,7 +810,16 @@ g.animatenumber::after {
     right: -15px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .p1, .p2.green.tk-objektiv-mk1, .p3.green.tk-objektiv-mk1 {
+    bottom: 120px;
+  }
+}
 @media screen and (max-width: 1040px) {
+  .collec {
+    grid-column: 1/span 6;
+  }
+
   .sectiontitle.tk-bely-display.purple.stattitle {
     z-index: 1;
   }
@@ -845,6 +887,14 @@ g.animatenumber::after {
   }
 }
 @media screen and (max-width: 450px) {
+  .stat.grid12.ma.wi90 {
+    margin-bottom: 50px;
+  }
+
+  .img.img2, .img.img3 {
+    margin-left: 0;
+  }
+
   .boomtxt {
     margin-bottom: 70px;
   }
@@ -894,18 +944,10 @@ g.animatenumber::after {
     right: 30px;
     font-weight: bold;
   }
-}
-@media screen and (max-width: 375px) {
-  .p1.green.tk-objektiv-mk1 {
-    right: 18px;
-  }
-
-  .p2.green.tk-objektiv-mk1 {
-    left: 125px;
-  }
 
   .pie svg {
     transform: scale(1) !important;
+    animation-duration: 1s;
   }
 
   .pie {
@@ -929,6 +971,22 @@ g.animatenumber::after {
 
   svg#SPORTS, svg#METAVERSE {
     margin-top: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .p1.green.tk-objektiv-mk1 {
+    right: 20px;
+    bottom: 25px;
+  }
+
+  .p2.green.tk-objektiv-mk1 {
+    left: 115px;
+    bottom: 25px;
+  }
+
+  .p3.green.tk-objektiv-mk1 {
+    left: 20px;
+    bottom: 25px;
   }
 }
 .ecotitle.sectiontitle.purple.tk-bely-display {
@@ -1061,8 +1119,8 @@ section.ecologieC {
   }
 }
 .sectiontitle.purple.tk-bely-display.avantagetitle {
-  grid-column: 1/span 6;
-  width: 95%;
+  grid-column: 1/span 5;
+  width: 85%;
   z-index: 2;
 }
 
@@ -1073,8 +1131,8 @@ section.ecologieC {
 }
 
 .avantagestxt {
-  grid-column: 9/span 4;
-  width: 80%;
+  grid-column: 9/span 3;
+  width: 76%;
 }
 
 .gallery {
@@ -1091,8 +1149,8 @@ section.ecologieC {
   grid-column: 3/span 4;
   grid-row: 1;
   z-index: 10;
-  margin-top: 60px;
-  margin-left: 80px;
+  margin-top: 55px;
+  margin-left: -80px;
 }
 
 .avimg.avimg3 {
@@ -1100,28 +1158,35 @@ section.ecologieC {
   grid-row: 1;
   z-index: 1;
   margin-top: 200px;
-  margin-left: 80px;
 }
 
 .avimg.avimg2 {
   grid-column: 2/span 4;
   grid-row: 1;
   z-index: 5;
-  margin-top: 370px;
-  margin-left: 80px;
+  margin-top: 320px;
+  margin-left: -25px;
 }
 
 .avtoptxt.purple.tk-objektiv-mk1 {
   margin-bottom: 50px;
+  line-height: 32px;
 }
 
 .avtitle.sectionsubtitle.green.tk-objektiv-mk1 {
+  width: 100%;
   line-height: 45px;
   margin-bottom: 40px;
 }
 
+.img.avimg.rellax {
+  height: 398px;
+  width: 303px;
+}
+
 .avdesc {
   width: 90%;
+  line-height: 32px;
 }
 
 .functions.grid12.wi90.ma {
@@ -1131,6 +1196,12 @@ section.ecologieC {
 .sectiontitle.sectionsubtitle.green.tk-objektiv-mk1 {
   grid-column: 1/Span 3;
   width: 70%;
+  grid-row: 1;
+}
+
+section.avantagesC .sectiontitle.sectionsubtitle.green.tk-objektiv-mk1 {
+  grid-column: 1/Span 3;
+  width: 90%;
   grid-row: 1;
 }
 
@@ -1152,17 +1223,23 @@ section.ecologieC {
 }
 
 .funcimg.rellax {
-  margin-top: -400px;
+  margin-top: -420px;
   height: 600px;
 }
 
 section.avantagesC {
-  margin-bottom: 140px;
+  margin-bottom: 170px;
 }
 
+@media screen and (max-width: 1370px) {
+  .sectiontitle.purple.tk-bely-display.avantagetitle {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 1300px) {
   .gallery {
-    grid-column: 1/span 6;
+    grid-column: 2/span 7;
+    margin-top: 90px;
   }
 
   .sectiontitle.purple.tk-bely-display.avantagetitle {
@@ -1174,6 +1251,10 @@ section.avantagesC {
   }
 }
 @media screen and (max-width: 1040px) {
+  .sectiontitle.purple.tk-bely-display.avantagetitle {
+    grid-column: 1/span 6;
+  }
+
   .funcimg.rellax {
     margin-top: 130px;
   }
@@ -1239,8 +1320,13 @@ section.avantagesC {
   }
 }
 @media screen and (max-width: 450px) {
-  .avimg {
-    height: 250px;
+  .img.avimg.rellax {
+    height: 298px;
+    width: 203px;
+  }
+
+  .gallery {
+    margin-top: 0;
   }
 
   .funcimg.rellax {
@@ -1275,6 +1361,12 @@ section.avantagesC {
     margin-bottom: 100px;
   }
 }
+@media screen and (max-width: 375px) {
+  .img.avimg.rellax {
+    height: 288px;
+    width: 193px;
+  }
+}
 .mobiletitle.sectiontitle.purple.tk-bely-display {
   grid-column: 1/Span 8;
 }
@@ -1305,8 +1397,9 @@ section.avantagesC {
 .consciousimg {
   grid-row: 2;
   grid-column: 2/span 6;
-  aspect-ratio: 418/462;
-  width: 100%;
+  aspect-ratio: 534/591;
+  width: 534px;
+  height: 591px;
   background-position: center;
   background-size: cover;
   margin-top: -60px;
@@ -1330,25 +1423,16 @@ section.avantagesC {
 }
 
 .consciousC {
-  margin-bottom: 340px;
+  margin-bottom: 140px;
 }
 
 .consciousimg.rellax {
-  margin-top: -1080px;
+  margin-top: -600px;
 }
 
-@media screen and (max-width: 1300px) {
-  .consciousimg.rellax {
-    margin-top: -1450px;
-  }
-}
 @media screen and (max-width: 1040px) {
   .consciousimg.rellax {
     margin-top: unset;
-  }
-
-  .consciousC {
-    margin-bottom: 140px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -1364,10 +1448,17 @@ section.avantagesC {
 @media screen and (max-width: 450px) {
   .consciousimg.rellax {
     height: 337px;
+    width: 394px;
   }
 
   .conscioustxt.tk-objektiv-mk1.purple {
     width: 100%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .consciousimg.rellax {
+    height: 337px;
+    width: 337px;
   }
 }
 .sectiontitle.purple.tk-bely-display.atrtitle {
@@ -1821,6 +1912,7 @@ section.roadmapC {
 .pdp {
   aspect-ratio: 235/314;
   height: 314px;
+  width: 235px;
   background-position: center;
   background-size: cover;
   margin-right: 20px;
@@ -1879,6 +1971,15 @@ section.roadmapC {
 @media screen and (max-width: 450px) {
   .pdp {
     width: 190px;
+  }
+
+  .poste, .facedesc {
+    font-size: 14px;
+  }
+
+  .firstname, .lastname {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 .sectiontitle.tk-bely-display.purple.talktitle {
@@ -2037,6 +2138,17 @@ section#talkC {
     bottom: -150px;
     left: 0;
     padding: 30px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .container div {
+    height: 250px;
+    width: 250px;
   }
 }
 .footernav {

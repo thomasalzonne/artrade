@@ -33,6 +33,7 @@ span.iconheader {
 .headertitle.title {
     grid-column: 1/span 9;
     font-weight: bold;
+    width: 90%;
 }
 .ico {
     grid-column: span 12;
@@ -79,7 +80,7 @@ svg#Calque_1 path.st0 {
 }
 .navigation {
     position: fixed;
-    right: 5%;
+    right: 2%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -92,17 +93,24 @@ a.navigationlink {
     border-radius: 10px;
 }
 .buytoken {
-    grid-column: 8/span 2;
+    grid-column: 9/span 2;
     background-color: #44E559;
     height: 43px;
     border-radius: 16px;
     display: flex;
     justify-content: center;
     line-height: 43px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-top: -10px;
 }
 span.buyicon {
     margin-left: 10px;
     margin-top: 3px;
+}
+.headervideo video {
+    width: 100%;
+    height: 100%;
 }
 @media screen and (max-width: 1300px) {
     .navigation{
@@ -118,6 +126,9 @@ span.buyicon {
     }
 }
 @media screen and (max-width: 800px){
+    .menu{
+        display: none;
+    }
     .headertitle.title{
         grid-column: 1/span 12;
     }
@@ -134,6 +145,10 @@ span.buyicon {
     }
 }
 @media screen and (max-width: 450px){
+    .headervideo{
+        height: fit-content;
+        background-color: unset;
+    }
     .header.grid12.wi90.ma {
         display: flex;
         flex-direction: column;

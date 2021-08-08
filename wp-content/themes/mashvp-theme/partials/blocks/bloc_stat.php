@@ -180,25 +180,26 @@
         $(partmeta).addClass('mobilanim')
     });
     $(psport).on("touchstart", function (e) {
-        partsport.style.opacity = 1
-        partsport.style.zIndex = 2
-        partsport.style.transitionDuration = "1s"
-    });    
+        if($(".pie").find('.mobilanim')){
+            el = $(".pie").find('.mobilanim')
+            $(el).removeClass('mobilanim')
+        }
+        $(partsport).addClass('mobilanim')
+    });
     $(part).on("touchstart", function (e) {
-        partart.style.opacity = 1
-        partart.style.zIndex = 2
-        partart.style.transitionDuration = "1s"
-    });   
+        if($(".pie").find('.mobilanim')){
+            el = $(".pie").find('.mobilanim')
+            $(el).removeClass('mobilanim')
+        }
+        $(partart).addClass('mobilanim')
+    });
     $(pgame).on("touchstart", function (e) {
-        partgame.style.opacity = 1
-        partgame.style.zIndex = 2
-        partgame.style.transitionDuration = "1s"
-    });   
-    $(putility).on("touchstart", function (e) {
-        partutility.style.opacity = 1
-        partutility.style.zIndex = 2
-        partutility.style.transitionDuration = "1s"
-    });   
+        if($(".pie").find('.mobilanim')){
+            el = $(".pie").find('.mobilanim')
+            $(el).removeClass('mobilanim')
+        }
+        $(partgame).addClass('mobilanim')
+    });  
     }
 
 

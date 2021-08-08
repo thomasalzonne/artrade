@@ -108,7 +108,7 @@ import {
       const { ah, av } = computeAspect();
   
       S.mesh.program.uniforms.uRes.value = new Vec4(
-        target.offsetWidth,
+        target.offsetWidth ,
         target.offsetHeight,
         ah,
         av
@@ -155,7 +155,7 @@ import {
       const delta = Math.max(10.4, time - S.previousTime);
   
       S.previousTime = time;
-      S.velocity.x = deltaX / delta;
+      S.velocity.x = deltaX / delta ;
       S.velocity.y = deltaY / delta;
   
       // Flag update to prevent hanging velocity values when not moving
@@ -263,4 +263,3 @@ import {
   
     return { init, destroy };
   };
-  
